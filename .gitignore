@@ -1,5 +1,5 @@
-# Object file
-*.o
+*.pdf
+.DS_Store
+assets/.DS_Store
+scripts/.DS_Store
 
-# Ada Library Information
-*.ali

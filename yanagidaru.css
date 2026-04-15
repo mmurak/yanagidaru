@@ -1,0 +1,51 @@
+.toc-field{
+	margin: 5px 5px 5px 0px;
+	font-size: 150%;
+	width: 50%;
+}
+.entry-field{
+	margin: 5px 5px 5px 0px;
+	font-size: 150%;
+	width: 50%;
+}
+.dispArea{
+	margin: 5px 5px 5px 0px;
+	font-size: 150%;
+}
+.buttons{
+	width: 48%;
+	min-width: 100px;
+	max-width: 260px;
+	margin: 5px 5px 5px 0px;
+	padding: 5px 8px 5px 8px;
+	font-size: 150%;
+	box-sizing: border-box;
+	border: 1px solid #68779a;
+	background: #cbe8fa;
+	cursor: pointer;
+}
+.buttons:active {
+	box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+	transform: translateY(2px);
+}
+#HimaLink{
+	font-size: 100%;
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: lightgray;
+	text-align: center;
+}
+table{
+	border-collapse: collapse;
+}
+td{
+	border: 1px solid black;
+}
+a, a:visited {
+	text-decoration: none;
+	color: inherit;
+}

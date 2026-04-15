@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+	<head>
+		<title>三省堂『誹風柳多留全集』検索</title>
+		<link rel="shortcut icon" href="redKiwiBird.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="./yanagidaru.css">
+	</head>
+	<body>
+		<h2>三省堂『誹風柳多留全集』（1976-1984）検索</h2>
+			<select class="toc-field" id="TOCSel" onchange="tocChange(this.value);"/>
+			</select>
+			<input type="text" id="EntryField" class="entry-field" placeholder="検索語はひらがなで入力" autocomplete="off"/>
+			<ul>
+			<li>現代仮名遣いで入力</li>
+			<li>「ぢ」と「づ」は、それぞれ「じ」と「ず」で入力</li>
+			<li>助詞の「は」「へ」「を」は、それぞれ「わ」「え」「お」で入力</li>
+			</ul>
+			<input type="button" id="SearchButton" class="buttons" value="索引検索（Enter）" onclick="indexSearch();"/>
+			<input type="button" id="clearButton" class="buttons" value="索引クリア（Esc）" onclick="clearField();"/>
+			<hr>
+			<select class="toc-field" id="TOCSel2" onchange="tocChange2(this.value);"/>
+			</select>
+			<input type="text" id="EntryField2" class="entry-field" placeholder="篇数と丁数は空白か「-」で区切って入力" autocomplete="off"/>
+			<br/>
+			<button onclick="concat('甲')">甲</button>
+			<button onclick="concat('乙')">乙</button>
+			<button onclick="concat('丙')">丙</button>
+			<button onclick="concat('ス')">ス</button> ｜
+			<button onclick="concat('別')">別</button>
+			<button onclick="concat('上')">上</button>
+			<button onclick="concat('中')">中</button>
+			<button onclick="concat('下')">下</button>
+			<br>
+			<input type="button" id="SearchButton2" class="buttons" value="篇丁検索（Enter）" onclick="indexSearch2();"/>
+			<input type="button" id="clearButton2" class="buttons" value="篇丁クリア（Esc）" onclick="clearField2();"/>
+			<br>
+
+			<div id="Canvas" class="dispArea"></div>
+		<div class="footer">
+			使用するには国立国会図書館デジタルコレクションの<a href="https://www.ndl.go.jp/jp/use/digital_transmission/individuals_index.html">個人向けデジタル化資料送信サービス</a>に登録、ログインしておく必要があります。
+		</div>
+		<script src="./assets/yanagidaruFullIndex.js"></script>
+		<script src="./assets/yanagidaruContentsIndex.js"></script>
+		<script src="./scripts/regulatorNeo.js"></script>
+		<script src="./scripts/yanagidaru.js"></script>
+	</body>
+</html>
+
